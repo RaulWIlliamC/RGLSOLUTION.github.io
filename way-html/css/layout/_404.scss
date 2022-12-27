@@ -1,0 +1,42 @@
+/* --------------------------------
+404 PAGE CSS
+-------------------------------- */
+
+.not-found {
+  &--img {
+    background: transparent url('http://via.placeholder.com/4800x2800') no-repeat center/cover;
+  }
+  &--overlay {
+    background-color: #333;
+    opacity: 0.7;
+  }
+  &--content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    h1 {
+      display: inline-block;
+      font-size: rem(180px);
+      font-weight: 700;
+    }
+    h2 {
+      margin: 20px 0 0;
+      font-size: 34px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 18px;
+      text-transform: none;
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+    }
+  }
+}

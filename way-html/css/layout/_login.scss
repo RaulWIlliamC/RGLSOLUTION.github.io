@@ -1,0 +1,62 @@
+/* --------------------------------
+LOGIN PAGE CSS
+-------------------------------- */
+
+.t-login {
+  #header {
+    height: 100px;
+  }
+  .navbar {
+    background: $color-primary;
+  }
+}
+.login {
+  padding: 11em 0;
+
+  &__container {
+    background: #fff;
+    max-width: 800px;
+    padding: 25px;
+    border-radius: $br;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    p {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+  &__header {
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: $br;
+    margin-bottom: 25px;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      i {
+        margin-right: 6px;
+      }
+    }
+    p {
+      font-size: 13px;
+      text-align: left;
+    }
+  }
+  &__form {
+    max-width: 600px;
+    padding: 25px;
+    margin: 0 auto;
+    .form-control {
+      font-size: 0.85rem;
+      padding: 6px;
+      border: none;
+      border-bottom: 1px solid #D0D0CE;
+      border-radius: 0;
+      box-shadow: none;
+      &:focus {
+        border-color: $color-accent1;
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+/* --------------------------------
+BOOTSTRAP OVERWRITE CSS
+-------------------------------- */
+
+.navbar-default {
+  background: transparent;
+  padding: 25px 0;
+  border: none;
+  margin-bottom: 0;
+}
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  > img {
+    max-width: initial;
+    max-height: 100%;
+  }
+}
+.navbar-nav {
+  padding: 4px 0;
+}
+.nav > li > a {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 2px;
+  margin: 0 14px;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  opacity: 0.75;
+  @include transition(0.2s);
+  &:focus,
+  &:hover {
+    color: inherit;
+    opacity: 1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    bottom: 8px;
+    width: 1px;
+    height: 2px;
+    background: #fff;
+    border-radius: $br;
+    opacity: 0;
+    @include transition(0.3s);
+  }
+  &.-register {
+    opacity: 1;
+    padding-left: 18px;
+    padding-right: 18px;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.3);
+    border-radius: $br;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    &::after {
+      display: none;
+    }
+  }
+  &.-login {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: $br;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: transparent;
+  color: #fff;
+  opacity: 1;
+}
+.navbar-default .navbar-nav li.active a::after,
+.navbar-default .navbar-nav > li > a:hover::after {
+  width: 12px;
+  opacity: 1;
+}
+.navbar-default .navbar-toggle {
+  border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background: none;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+  max-height: initial;
+}
+
+.form-group {
+  margin-bottom: 28px;
+}
+input.form-control {
+  height: 40px;
+}
+
+.pagination > li > a, .pagination > li > span {
+  width: 34px;
+  height: 34px;
+  line-height: 32px;
+  background-color: #F5F9FE;
+  color: $color-text;
+  font-size: 13px;
+  padding: 0;
+  border-color: #F5F9FE;
+  border-radius: $br;
+  margin-left: 12px;
+}
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  background-color: #ECF3FC;
+  color: $color-text;
+  border-color: #ECF3FC;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  background: $color-primary;
+  border-color: $color-primary;
+  color: #fff;
+}

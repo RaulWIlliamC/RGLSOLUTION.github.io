@@ -1,0 +1,130 @@
+/* --------------------------------
+SINGLE BLOG POST PAGE CSS
+-------------------------------- */
+
+.post {
+  &__img {
+    border-radius: $br;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+  &__content {
+    margin-bottom: 65px;
+    p {
+      color: #84878D;
+      font-size: rem(15px);
+      line-height: 1.9;
+      margin: 0 0 10px;
+    }
+    blockquote {
+      font-size: rem(14px);
+      font-style: italic;
+      font-weight: 600;
+      padding: 20px 30px;
+      border-left: 5px solid $color-accent;
+      margin: 20px 0;
+    }
+  }
+  &__tags {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E9E9EA;
+    li {
+      display: inline-block;
+      font-size: rem(14px);
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 0 5px;
+      a {
+        color: $color-text;
+      }
+    }
+  }
+  &__author {
+    display: flex;
+    padding: $padding-three 0;
+    img {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+    &--info {
+      max-width: 600px;
+      margin: auto 0 auto 14px;
+      h3 {
+        font-size: rem(18px);
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+      p {
+        color: $color-muted;
+        font-size: rem(14px);
+        line-height: 1.6;
+      }
+    }
+  }
+  &__comments {
+    margin-bottom: 45px;
+    h4 {
+      font-size: rem(20px);
+      margin: 15px 0 35px;
+    }
+    li {
+      ul {
+        margin-left: 85px;
+      }
+    }
+    &--img {
+      float: left;
+      width: 65px;
+      height: 65px;
+      border-radius: 30px;
+    }
+    &--container {
+      position: relative;
+      background: #F5F8FE;
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      margin-left: 85px;
+      &::before {
+        content: ' ';
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        @include css-triangle(10px, rgba(164,177,191,0.12), left);
+      }
+      span {
+        display: block;
+        font-size: rem(13px);
+        color: #a4b1bf;
+        padding-bottom: 8px;
+        margin-bottom: 10px !important;
+        border-bottom: 1px solid rgba(164,177,191,0.2);
+      }
+      p {
+        font-size: rem(14px);
+        margin: 0 0 10px;
+      }
+      a {
+        color: $color-text;
+      }
+    }
+  }
+  &__addcomm {
+    margin-bottom: 45px;
+    h4 {
+      font-size: rem(20px);
+      margin: 15px 0 35px;
+    }
+  }
+  input.form-control {
+    height: 50px;
+  }
+  .form-control {
+    background-color: #F5F8FE;
+    border-color: #F5F8FE;
+    box-shadow: none;
+    &:focus {
+      background-color: #ECF3FC;
+    }
+  }
+}

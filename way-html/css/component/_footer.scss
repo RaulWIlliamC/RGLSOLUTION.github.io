@@ -1,0 +1,24 @@
+/* --------------------------------
+FOOTER CSS
+-------------------------------- */
+
+.footer {
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  &__social {
+    float: left;
+    a {
+      color: $color-text;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  &__copyright {
+    float: right;
+    font-size: rem(14px);
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Way | Theme Documentation</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- prettify CSS -->
+        <link rel='stylesheet' href='assets/css/prettify.css'/>
+        <!-- Our Custom CSS -->
+        <link rel='stylesheet' href='assets/css/style.css'/>
+    </head>
+    <body>
+
+
+
+        <nav id="sidebar" class="navbar">
+            <div class="sidebar-header">
+                <h3>Way Template</h3>
+            </div>
+
+            <ul class="list-unstyled components nav">
+                <li class="active"><a href="#introduction">Introduction</a></li>
+                <li><a href="#html">HTML Structure</a></li>
+                <li><a href="#css">CSS Files and Structure</a</li>
+                <li><a href="#fonts">Fonts</a</li>
+                <li><a href="#images">Images</a</li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#sass">SASS Files</a></li>
+                <li><a href="#subscription">Subscription</a></li>
+                <li><a href="#countdown">Countdown</a></li>
+                <li><a href="#source">Source &amp; Credits</a></li>
+                <li><a href="#changelog">Changelog</a></li>
+                <li><a href="#thanks">Thank You</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+
+
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>
+                    <strong>Way </strong>is a powerful Responsive App Landing Page template based on Bootstrap. It is 100% responsive and looks stunning on all types of screens and devices.
+                    This template has a universal design, it thought every detail and animation effect. Its easy to customize to fit your needs just replace images and texts and Its offers many customization options.
+                    The template comes with multiple homepages variations and pages.
+                    Way is a great choice to present your app ideas and promote your app
+                </p>
+            </section>
+
+
+
+            <section id="html">
+                <h2>HTML Structure</h2>
+                <p>
+                    To Make one of demo layouts as default you need to change its name to <strong>index.html</strong><br>
+                    Example change <strong>home-1-img.html</strong> to <strong>index.html</strong> and upload template to your website.
+                </p>
+                <p>
+                    Way is fully responsive HTML5 Template followed HTML5 Structure. Every section is seperated with Comments.
+                </p>
+                <p>
+                    <strong>Head Section Structure:</strong> Here is the example code of section
+                </p>
+
+                <pre class="prettyprint lang-html linenums">
+&lt;head>
+  &lt;meta charset="utf-8">
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+  &lt;meta name="keywords" content="">
+  &lt;meta name="description" content="">
+  &lt;title>Way - Software Landing Page&lt;/title>
+
+  &lt;!-- Favicons -->
+  &lt;link rel="icon" sizes="16x16" type="image/png" href="img/favicon.png">
+  &lt;link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  &lt;link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  &lt;link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  &lt;!-- Fonts -->
+  &lt;link href="https://fonts.googleapis.com/css?family=Exo:400,600,700" rel="stylesheet">
+
+  &lt;!-- Icons -->
+  &lt;link rel="stylesheet" href="css/glyphs/fa/font-awesome.min.css" type="text/css">
+
+  &lt;!-- CSS Implementing Plugins -->
+  &lt;link rel="stylesheet" href="css/vendor/animate.css" type="text/css">
+  &lt;link rel="stylesheet" href="css/vendor/lity.min.css" type="text/css">
+  &lt;link rel="stylesheet" href="css/vendor/owl.carousel.min.css" type="text/css">
+  &lt;link rel="stylesheet" href="css/vendor/owl.theme.default.min.css" type="text/css">
+
+  &lt;!-- CSS Global Compulsory -->
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  &lt;link rel="stylesheet" href="css/style.css" type="text/css">
+&lt;/head>
+                </pre>
+
+                <strong>Body Section Structure:</strong> Here is the example code of section
+
+                <pre class="prettyprint lang-html linenums">
+&lt;!-- BEGIN SECTION VIDEO -->
+&lt;section class="video" style="background-image: url('assets/images/video-bg.jpg');">
+  &lt;div class="c-overlay s-back-grad video__overlay">&lt;/div>
+  &lt;div class="container">
+    &lt;div class="c-headline -white">
+      &lt;span>Video&lt;/span>
+      &lt;h2>Watch our video presentation&lt;/h2>
+    &lt;/div>
+    &lt;a href="http://www.youtube.com/watch?v=XSGBVzeBUbk" class="video__action text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s" data-lity="">
+      &lt;i class="fa fa-play">&lt;/i>
+    &lt;/a>
+  &lt;/div>
+&lt;/section>
+&lt;!-- END SECTION VIDEO -->
+                </pre>
+            </section>
+
+
+            <section id="css">
+                <h2>CSS Files and Structure</h2>
+                <p>I'm using latest CSS coding standard. Custom Style written into style.css which is override Bootstrap style somewhere else.</p>
+
+                <strong>CSS Files included:</strong>
+                <br>
+
+                <ul>
+                    <li>Bootstrap CSS</li>
+                    <li>Font Awesome CSS</li>
+                    <li>Lity CSS</li>
+                    <li>Animate CSS</li>
+                    <li>Owl Carousel CSS</li>
+                    <li>Custom CSS</li>
+                </ul>
+
+                <p>
+                    <strong>style.css</strong> file contains all of the specific styling for the template. If you would like to edit a specific section of the site, simply it will be in the same order in HTML file, scroll down until you find the appropriate style that needs to be edited.
+                </p>
+                <p>
+                    If you change the style of Features section, find the following section in the stylesheet:
+                </p>
+
+                <pre class="prettyprint lang-css linenums">
+/*-------------------
+[FEATURES SECTION]
+-------------------*/
+.features__container {
+  padding: 35px; }
+
+.feature {
+  text-align: center;
+  margin-top: 20px; }
+  .feature__icon {
+    width: 120px;
+    height: 120px;
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    margin: 0 auto; }
+    .feature__icon img {
+      background-color: #F6F7F9;
+      max-width: 120px;
+      padding: 20px;
+      border: 1px solid #F1F2F4;
+      border-radius: 4px;
+      -webkit-transform: translate(-30px, -20px);
+      -ms-transform: translate(-30px, -20px);
+      transform: translate(-30px, -20px); }
+  .feature h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 25px 0; }
+  .feature p {
+    font-size: 0.875rem;
+    color: #9599A7; }
+                </pre>
+            </section>
+
+
+            <section id="fonts">
+                <h2>Fonts</h2>
+
+                <p>Template Uses Google Font: </p>
+
+                <ul>
+                    <li><a href="https://fonts.google.com/specimen/Exo" target="_blank">Exo Font</a></li>
+                </ul>
+            </section>
+
+            <section id="images">
+                <h2>Images</h2>
+
+                <p>All Images included are free and ready to use, at <code>&lt;div class="hero__img"></code> you don't have to remove the iPhone mockup, only replace the current <code>&lt;img></code> with your image,</p>
+
+                <pre class="prettyprint lang-html linenums">
+&lt;div class="hero__img">
+  &lt;img src="img/mockup.png" alt="App Mockup">
+&lt;/div>
+                </pre>
+
+                <p>All other images are entirely replaceable, The PSD included contains all editable freebies, that makes it easier for you to attain the desirable style.</p>
+            </section>
+
+            <section id="javascript">
+                <h2>Javascript</h2>
+
+                <p>Way imports following Javascript files.</p>
+
+                <ul>
+                    <li>jQuery 2.1.3 CDN</li>
+                    <li>Bootstrap 3</li>
+                    <li>jQuery Plugins</li>
+                    <li>Custom Script</li>
+                </ul>
+
+                <p>
+                    All code are beautifully written. You can customize easily. Just look at the js code.
+                </p>
+
+                <p>
+                    Example: If you want to Configure the team slider, just find the following block and play with the slider options:
+                </p>
+
+                <pre class="prettyprint lang-js linenums">
+$("#screens__slider").owlCarousel({
+  autoplay: true,
+  autoplayTimeout: 5000,
+  loop: true,
+  margin: 10,
+  nav: false,
+  pagination: false,
+  dots: true,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 4,
+    }
+  }
+});
+                </pre>
+            </section>
+
+
+
+
+            <section id="sass">
+                <h2>SASS Files</h2>
+                <p>.scss files icluded:</p>
+
+                <ul>
+                    <li>Partials
+                        <br>
+                        <ul>
+                            <li>_config.scss</li>
+                            <li>_reset.scss</li>
+                            <li>_root.scss</li>
+                            <li>_base.scss</li>
+                            <li>_bootstrapoverwrite.scss</li>
+                            <li>_header.scss</li>
+                            <li>_home.scss</li>
+                            <li>_blog.scss</li>
+                            <li>_sidebar.scss</li>
+                            <li>_post.scss</li>
+                            <li>_404.scss</li>
+                            <li>_comingsoon.scss</li>
+                            <li>_footer.scss</li>
+                            <li>_helpers.scss</li>
+                            <li>_animation.scss</li>
+                            <li>_breakpoint.scss</li>
+                        </ul>
+                        <br>
+                    </li>
+                    <li>style.scss</li>
+                </ul>
+
+                <br>
+
+                <p>
+                    All styles written in partials are automatically compiled to style.css file.
+                </p>
+            </section>
+
+
+            <section id="subscription">
+                <h2>Subscription</h2>
+
+                <p>You can setup Mailchimp Subscriptions anywhere on your Website by simply Copy/Pasting the Sample Code present in the HTML Files.</p>
+                <p>To setup your Mailchimp Newsletter Signup Form, you will have to add your <code>Mailchimp Post URL</code> to <code>js/custom.js</code> File.</p>
+
+                <pre class="line-numbers language-javascript"><code>
+/* ========================================================== */
+/*   Mailchimp                                                */
+/* ========================================================== */
+
+var form = $('#mach-form');
+
+  if (form.length) {
+    form.ajaxChimp({
+      callback: mailchimpCallback,
+      // Replace the URL above with your mailchimp URL (put your URL inside '').
+      url: 'mailchimp-post-url'
+    });
+  }
+                </code></pre>
+
+                <p>To obtain the code for your MailChimp Form Action:</p>
+                <p>1. Log into your <a href="http://mailchimp.com/" target="_blank">MailChimp account</a>.</p>
+                <p>
+                  <img src="assets/img/mc-step-1.png" alt="#" class="img-responsive img-center">
+                </p>
+                <p>2. Click the Lists button in the left navigation bar.</p>
+                <p>
+                  <img src="assets/img/mc-step-2.png" alt="#" class="img-responsive img-center">
+                </p>
+                <p>3. Click the drop-down box on the right, and choose <strong>Signup forms</strong>.</p>
+                <p>
+                  <img src="assets/img/mc-step-3.png" alt="#" class="img-responsive img-center">
+                </p>
+                <p>4. Choose <strong>Embedded forms</strong>.</p>
+                <p>
+                  <img src="assets/img/mc-step-4.png" alt="#" class="img-responsive img-center">
+                </p>
+                <p>5. On the <strong>Embedded form code</strong> page, click on <strong>Naked</strong>.</p>
+                <p>
+                  <img src="assets/img/mc-step-5.png" alt="#" class="img-responsive img-center">
+                </p>
+                <p>6. Scroll down and locate <strong>Copy/paste onto your site</strong>.</p>
+                <p>
+                  <img src="assets/img/mc-step-6.png" alt="#" class="img-responsive img-center">
+                </p>
+                <p>7. Double-click anywhere in the box to select the code.</p>
+                <p>8. Copy the code to your clipboard (use CMD-C for Mac or CTRL-C for Windows).</p>
+                <p>9. Paste the code into any text editor so that you can view it.</p>
+                <p>10. The only line of this code that you need is the action attribute value in the opening form tag. Reading from the top of the code, it's located between the second set of quotation marks. Don’t select the quotation marks themselves, just what's inside them.</p>
+                <p>
+                  <img src="assets/img/mc-step-7.png" alt="#" class="img-responsive img-center">
+                </p>
+                <p>Copy the selected action attribute value to your clipboard and paste the action attribute value into the <code>mailchimp-post-url</code> at line 236 of <span>custom.js</span>.</p>
+                <p>11. Test things out by subscribing to your own MailChimp newsletter.</p>
+            </section>
+
+            <section id="countdown">
+                <h2>Countdowns</h2>
+
+                <p>
+                  <img src="assets/img/shortcodes-countdown.png" alt="#" class="img-responsive img-center">
+                </p>
+                <p>You can set the countdown in <code>data-countdown</code>, as you can see on example::</p>
+                <pre class="line-numbers language-html"><code>
+&lt;div class="countdown" data-countdown="2016/10/21 12:00:00"&gt;&lt;/div&gt;
+                </code></pre>
+            </section>
+
+            <section id="source">
+                <h2>Source &amp; Credits</h2>
+
+                <ul>
+                    <li><a href="http://jquery.com" target="_blank">jQuery</a></li>
+                    <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                    <li><a href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a></li>
+                    <li><a href="http://github.com/davist11/jQuery-One-Page-Nav" target="_blank">One Page Nav</a></li>
+                    <li><a href="https://github.com/jsor/lity/tree/v2.3.0" target="_blank">Lity</a></li>
+                    <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing</a></li>
+                    <li><a href="https://github.com/matthieua/WOW" target="_blank">WOW</a></li>
+                    <li><a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">Owl Carousel</a></li>
+                    <li><a href="https://github.com/scdoshi/jquery-ajaxchimp" target="_blank">ajaxChimp</a></li>
+                </ul>
+            </section>
+
+
+            <section id="changelog">
+                <h2>Changelog</h2>
+
+                <p><strong>Way 1.1</strong></p>
+                <small>19 April 2018</small>
+
+                <pre class="prettyprint lang-css linenums">
+Fix team members hover bug.
+Required user to type mail to send demo information.
+Blog list (full width-left sidebar-right sidebar).
+Login & Registration pages.
+Enhancements to Responsive.
+Enhancements to Performance.
+                </pre>
+
+                <p><strong>Way 1.0</strong></p>
+                <small>16 Novmber 2017</small>
+
+                <pre class="prettyprint lang-css linenums">
+Initial Release
+                </pre>
+            </section>
+
+
+
+            <section id="thanks">
+                <h2>Thank You</h2>
+                <p>Once again, thank you so much for purchasing this product. I'd be glad to help you if you have any questions relating to this product. No guarantees, but I'll do my best to assist. If you have a more general question relating to this product on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+                <p><strong>DohTheme.</strong></p>
+            </section>
+
+        </div>
+
+
+
+
+
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <!-- jQuery Nicescroll CDN -->
+         <script src="assets/js/jquery.nicescroll.min.js"></script>
+         <!-- prettify Script -->
+         <script src='assets/js/prettify.js'></script>
+         <!-- Easyscroll Script -->
+         <script src='assets/js/easyscroll.min.js'></script>
+         <!-- Custom Script -->
+         <script src='assets/js/script.js'></script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+/* --------------------------------
+BASE CSS
+-------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+::selection { background-color: $color-primary; color: #fff;}
+::-moz-selection { background-color: $color-primary; color: #fff; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+body {
+  font-size: $base-font-size;
+  line-height: ($base-line-height/$base-font-size);
+  font-family: $base-font-family;
+  color: $color-text;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}

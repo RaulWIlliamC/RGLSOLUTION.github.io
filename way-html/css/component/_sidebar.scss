@@ -1,0 +1,91 @@
+/* --------------------------------
+SIDEBAR CSS
+-------------------------------- */
+
+.sidebar {
+  &__item {
+    h4 {
+      color: $color-text;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding-bottom: 16px;
+      border-bottom: 2px solid #E9E9EA;
+      margin: 30px 0;
+    }
+  }
+  &__search {
+    position: relative;
+    &--button {
+      position: absolute;
+      top: 0;
+      right: 12px;
+      height: 40px;
+      line-height: 40px;
+      background: none;
+      color: $color-text;
+      padding: 0;
+      border: none;
+    }
+    .form-control {
+      background: #F5F9FE;
+      border: none;
+      box-shadow: none;
+    }
+  }
+  .category {
+    li {
+      position: relative;
+      font-size: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px dotted #E9E9EA;
+      margin-bottom: 10px;
+      a {
+        color: $color-text;
+      }
+      span {
+        position: absolute;
+        top: -2px;
+        right: 0;
+        display: block;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        background-color: #F5F9FE;
+        color: $color-text;
+        font-size: rem(12px);
+        text-align: center;
+        border-radius: 50%;
+        margin-left: 5px;
+      }
+    }
+  }
+  .popular {
+    li {
+      display: inline-block;
+      padding: 2px 0;
+      img {
+        border-radius: $br;
+      }
+      a {
+        color: $color-text;
+        font-size: 15px;
+      }
+      .date {
+        display: block;
+        font-size: 13px;
+      }
+    }
+  }
+  .tags {
+    li {
+      display: inline-block;
+      padding: 0 5px;
+      a {
+        display: block;
+        @extend .s-text-grad;
+        font-size: 14px;
+        padding: 10px 10px 10px 0;
+      }
+    }
+  }
+}

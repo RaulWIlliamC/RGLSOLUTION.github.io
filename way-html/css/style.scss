@@ -1,0 +1,53 @@
+/*
+Theme Name: Way
+Description: Software Landing Page
+Author: DohTheme
+Author URI: http://www.dohtheme.com
+Version: 1.0
+License: https://themeforest.net/licenses/standard
+*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. RESET CSS
+2. BASE CSS
+3. GENERAL CLASSES
+  3.1 BUTTONS
+4. BOOTSTRAP OVERWRITE CSS
+5. HEADER CSS
+6. HOME CONTENT CSS
+7. BLOG PAGE CSS
+8. SIDEBAR CSS
+9. SINGLE BLOG PAGE CSS
+10. 404 PAGE CSS
+11. COMING SOON PAGE CSS
+12. LOGIN PAGE
+12. FOOTER CSS
+13. HELPER CLASSES
+14. RESPONSIVE CSS
+-------------------------------------------------------------------*/
+
+@import "base/config";
+@import "base/reset";
+@import "base/root";
+@import "base/base";
+@import "module/bootstrapoverwrite";
+
+@import "component/header";
+
+
+@import "layout/home";
+@import "layout/blog";
+@import "component/sidebar";
+@import "layout/post";
+@import "layout/404";
+@import "layout/comingsoon";
+@import "layout/login";
+
+
+
+@import "component/footer";
+@import "module/helpers";
+@import "module/animation";
+@import "module/breakpoint";

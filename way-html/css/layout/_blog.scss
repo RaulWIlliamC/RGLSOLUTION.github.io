@@ -1,0 +1,67 @@
+/* --------------------------------
+BLOG CSS
+-------------------------------- */
+
+
+.blogs {
+  &__pagin {
+    margin-top: 40px;
+  }
+}
+
+// Post Header
+
+.blog-header {
+  position: relative;
+  height: 400px;
+  &__img {
+    overflow: hidden;
+  }
+  &__overlay {
+    background-color: #333;
+    opacity: 0.8;
+  }
+  &__content {
+    display: block;
+    margin-top: 185px;
+    h1 {
+      color: #fff;
+      font-size: rem(46px);
+    }
+  }
+  &__info {
+    display: block;
+    li {
+      display: inline-block;
+      font-size: rem(14px);
+      +li {
+        &::before {
+          padding: 0 9px 0 5px;
+          color: #b0b0b0;
+          content: "/";
+        }
+      }
+      a {
+        color: #fff;
+      }
+    }
+  }
+  .breadcrumb {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    background-color: #fff;
+    color: $color-text;
+    font-size: rem(14px);
+    border-radius: $br;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+    transform: translateX(-50%);
+    margin: 0;
+    a {
+      color: $color-text;
+    }
+  }
+  .breadcrumb > .active {
+    @extend .s-text-grad;
+  }
+}

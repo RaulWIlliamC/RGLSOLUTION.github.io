@@ -1,0 +1,178 @@
+/* --------------------------------
+COMING SOON PAGE CSS
+-------------------------------- */
+
+.comingso {
+  color: #fff;
+  text-align: center;
+  &__img {
+    background: transparent url('http://via.placeholder.com/4800x2800') no-repeat center/cover;
+  }
+  &__overlay {
+    background-color: #333;
+    opacity: 0.7;
+  }
+  .logo {
+    max-width: 160px;
+    margin: 0 auto 60px;
+  }
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    h1 {
+      display: inline-block;
+      font-size: rem(60px);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &__form {
+    position: relative;
+    max-width: 600px;
+    margin: 10px auto;
+  }
+  &__message {
+    margin: 10px auto;
+    &--text {
+      position: relative;
+      display: block;
+      background-color: #fff;
+      color: #fff;
+      font-size: rem(13px);
+      padding: 10px 10px 10px 44px;
+      border-radius: $br;
+      &::after {
+        content: "";
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        width: 20px;
+        height: 20px;
+        background: rgba(0, 0, 0, 0.2);
+        font-size: 12px;
+        text-align: center;
+        border-radius: 100%;
+        transform: translateY(-50%);
+      }
+      &.error {
+        background-color: #d9534f;
+        &::after {
+          content: "\f00d";
+        }
+      }
+      &.valid {
+        background-color: #5cb85c;
+        &::after {
+          content: "\f00c";
+        }
+      }
+    }
+  }
+  .form-control {
+    height: 44px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    &::-webkit-input-placeholder
+    {
+	    color: #fff;
+    }
+    &::-moz-placeholder {
+      color: #fff;
+    }
+    &:-ms-input-placeholder {
+      color: #fff;
+    }
+    &:-moz-placeholder {
+      color: #fff;
+    }
+  }
+  .c-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    padding: 0 30px;
+  }
+  &__footer {
+    &--social {
+      margin-top: 80px;
+      li {
+        display: inline-block;
+        margin: 0 4px;
+        a {
+          display: block;
+          width: 30px;
+          height: 30px;
+          line-height: 28px;
+          color: #fff;
+          font-size: rem(20px);
+          text-align: center;
+          @include transition(0.3s);
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    &--copyright {
+      font-size: 0.95rem;
+      margin: 20px auto;
+    }
+  }
+}
+
+// Counter
+
+.countdown {
+  margin: 20px auto;
+}
+.counter-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.counter-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+  padding: 10px 0;
+  &::after {
+    content: ':';
+    position: absolute;
+    top: 18px;
+    left: -38px;
+    color: #fff;
+    font-size: 32px;
+  }
+  .number {
+    display: inline-block;
+    font-size: rem(32px);
+    font-weight: 700;
+    margin-right: 4px;
+  }
+  span {
+    font-size: rem(14px);
+  }
+  &.first {
+    opacity: 1;
+    margin-left: 0;
+    &::after {
+      display: none;
+    }
+    .number {
+      font-size: rem(46px);
+      margin-left: 4px;
+    }
+  }
+}
